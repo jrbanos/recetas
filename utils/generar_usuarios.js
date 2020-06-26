@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const Usuario = require(__dirname + '/../models/usuario.js');
 var CryptoJS = require("crypto-js");
 
-mongoose.connect('mongodb://localhost:27017/recetasV3');
+mongoose.connect('mongodb://jbatalaya.site:27017/recetas');
 
 Usuario.collection.drop();
 let usu1 = new Usuario({
