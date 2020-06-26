@@ -12,7 +12,7 @@ const recetas = require(__dirname + '/routes/recetas');
 const auth = require(__dirname + '/routes/auth');
 const publico = require(__dirname + '/routes/publico');
 
-mongoose.connect('mongodb://recetas.jbatalaya.site:27017/recetas', { useNewUrlParser: true, useUnifiedTopology: true });
+mongoose.connect('mongodb://jbatalaya.site:27017/recetas', { useNewUrlParser: true, useUnifiedTopology: true });
 
 let app = express();
 
