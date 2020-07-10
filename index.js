@@ -45,8 +45,7 @@ app.use(methodOverride(function(req, res) {
     }
 }));
 
-app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
-
+app.use(methodOverride('_method'));
 app.use('/public', express.static(__dirname + '/public'));
 app.use(express.static(__dirname + '/node_modules/bootstrap/dist'));
 app.use('/admin', recetas);
