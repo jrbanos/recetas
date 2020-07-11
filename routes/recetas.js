@@ -69,7 +69,7 @@ router.post('/recetas', autenticacion, upload.single('imagen'), (req, res) => {
             cantidad: req.body.cantidad3,
             unidad: req.body.unidad3
         };
-        elementos.push(elemento3);
+        elementosF.push(elemento3);
     }
     
     let nuevaReceta = new Receta({
