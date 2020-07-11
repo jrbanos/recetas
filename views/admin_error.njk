@@ -1,15 +1,16 @@
 {% extends "admin_base.njk" %}
 
-{% block titulo %}Recetas | Error{% endblock %}
+{% block titulo %}Admin | Error{% endblock %}
 
 {% block contenido %}
+
     <h1>Error</h1>
-    <div class="alert-danger">
-        {%if error %}
-            {{error}}
-        {%else%}
+    <div class="alert alert-warning">
+        {% if error %}
+            {{ error }}
+        {% else %}
             Error en la aplicación
-        {%endif%}
+        {% endif %}
     </div>
 
 {% endblock %}

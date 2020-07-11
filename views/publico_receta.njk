@@ -5,15 +5,16 @@
 {% block contenido %}
 
     <div class="form-row">
-        <h1>{{receta.titulo}}</h1><br/>
+        <h1>{{receta.titulo}}</h1>
+        <br>
     </div>
     <div class="form-row">
         <p>{{receta.comensales}} comensales</p>
     </div>
     <div class="form-row">
         <p>
-            <strong>Preparación: </strong>{{receta.preparacion}} min. 
-            <strong>Cocción: </strong>{{receta.coccion}} min. 
+            <b>Preparación: </b>{{receta.preparacion}} minutos 
+            <b>Cocción: </b>{{receta.coccion}} minutos
         </p>
     </div>
     <div class="form-row">
@@ -21,7 +22,7 @@
             <img src="/public/uploads/{{receta.imagen}}" class="w-100">
         </div>
         <div class="col-8">
-            <p><strong>Ingredientes:</strong></p>
+            <p><b>Ingredientes:</b></p>
             <ul>
                 {% for elemento in receta.elementos %}
                     {% if elemento.ingrediente %}
@@ -33,7 +34,7 @@
                     {% endif %}
                 {% endfor %}
             </ul>
-            <p><strong>Descripción:</strong></p>
+            <p><b>Descripción:</b></p>
             <p>{{receta.descripcion}}</p>
         </div>
     </div>
